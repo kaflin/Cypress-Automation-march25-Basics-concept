@@ -27,3 +27,4 @@
 /// <reference types="Cypress" />
 
 require('@cypress/xpath');
+import { describe, it } from 'mocha';

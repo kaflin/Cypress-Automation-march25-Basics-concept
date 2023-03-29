@@ -1,19 +1,11 @@
-{
-  "name": "cypresautomation",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Suraj Gupta",
-  "license": "ISC",
-  "dependencies": {
-    "cypress": "^12.8.1",
-    "popover-plugin": "^1.0.12"
-  },
-  "devDependencies": {
-    "@cypress/xpath": "^2.0.3",
-    "mocha": "^10.2.0"
+  {
+      "name": "cypresautomation",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "author": "Suraj Gupta",
+      "license": "ISC"
   }
-}

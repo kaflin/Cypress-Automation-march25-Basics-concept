@@ -42,7 +42,7 @@ describe('File Uploads',()=>{
         cy.visit("https://www.htmlelements.com/demos/fileupload/shadow-dom/index.htm");
         cy.get('.smart-browse-input', {includeShadowDom:true}).attachFile('test1.pdf');//This element is part of shadow dom
         cy.wait(5000);
-        cy.get('.smart-item-name',{includeShadowDom:true}).contains('test1.pdf');
+        cy.get('.smart-item-name',{includeShadowDom:true}).contains('test1.pdf');//Validation
 
 
         

@@ -31,11 +31,17 @@ require('@cypress/xpath');
 
 
 
-//We Can use this commends in multiple place
+//We Can use this commands in multiple place
 Cypress.Commands.add('getIframe',(iframe)=>{
    return  cy.get('#mce_0_ifr')
     .its('0.contentDocument.body')//Only one document,So 0(zero is used)
     .should('be.visible')
     .then(cy.wrap);//Inside it we are getting the frame,inside the frame we have document part,check if it is visible or not bot and wrap that element
 
+})
+
+//custom command for clicking on link using label
+
+Cypress.Commands.add('clickLink',(label)=>{
+    cy.get('a').contains(label).click();
 })

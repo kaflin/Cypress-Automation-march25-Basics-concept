@@ -15,13 +15,13 @@ describe('MyTestSuite',()=>{
 
     })*/
      //Access through Hook - for Multiple it blocks
-     let userdata
+     let userdata;//making it global
      before(()=>{
         cy.fixture("orangehrm").then((data)=>{
             userdata=data;
         })
      })
-     it('FixtureDemoTest',()=>{
+     it('FixturesDemoTest',()=>{
         cy.visit('https://opensource-demo.orangehrmlive.com/');
         cy.get("input[placeholder='Username']").type(userdata.username);
         cy.get("input[placeholder='Password']").type(userdata.password);
